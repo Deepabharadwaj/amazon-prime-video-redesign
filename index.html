@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
@@ -20,6 +21,7 @@
     <!-- custom files-->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js"></script>
+
 
     <title>Amazon Prime</title>
 </head>
@@ -51,43 +53,90 @@
                     <a class="nav-link" href="#"> <img src="icons/navbar_icons/prime_toggle_on.png" height="18" onclick="image_toggle(this, 'icons/navbar_icons/prime_toggle_on.png', 'icons/navbar_icons/prime_toggle_off.png')"> </a>
                 </li>
                 <li class="nav-item nav-item-right">
-                    <a class="nav-link" href="#"> <img src="icons/navbar_icons/search.png" height="20"> </a>
+                    <a class="nav-link" href="#"> 
+                        <img src="icons/navbar_icons/search/default.png" height="20" 
+                            onmouseover="img_hover(this)" onmouseout="img_out(this)"> </a>
                 </li>
                 <li class="nav-item nav-item-right">
-                    <a class="nav-link" href="#"> <img src="icons/navbar_icons/Notifications.png" height="20"> </a>
-                </li>
+                    <a class="nav-link" href="#"> <img src="icons/navbar_icons/notifications/default.png" height="20"
+                        onmouseover="img_hover(this)" onmouseout="img_out(this)"> </a>
+                    </li>
                 <li class="nav-item nav-item-right">
-                    <a class="nav-link" href="#"> <img src="icons/navbar_icons/account/default_account.png" height="20"> </a>
+                    <a class="nav-link" href="#"> <img src="icons/navbar_icons/account/default.png" height="20"
+                        onmouseover="img_hover(this)" onmouseout="img_out(this)"> </a>
                 </li>
                 
             </ul>
         </div> 
     </nav>
+
     <section class="container-fluid">
-        <div class="row align-items-end"  id="hero-image" >
-            <div class="col-11"  style="margin: 5% 0;">
-                <button type="button" class="btn btn-outline-primary button-blue pt-1 pb-1" 
-                        style="border-radius: 20px; margin-left: 20px;" 
+        <div class="hero-container align-items-end">
+            <img id= "hero" class="img-fluid" src="img/marvelousmaisel.jpg">
+            <div id= "hero-gif" class="align-items-end">
+                <img src="img/marvelousmaisellogo.svg" style="margin: 5%">
+            </div>
+            <div class="hero-overlay align-items-end" style="padding: 0 5%;">
+            <span>
+                <div class="row mb-3" > 
+                    <div class="col-12">
+                        <button type="button" class="btn btn-outline-primary button-blue pt-1 pb-1" 
+                        style="border-radius: 20px;" 
                         onmouseover="image_on_hover('play_img')" 
                         onmouseout="image_on_out('play_img')">
-                    <a><img id="play_img" src="icons/card_icons/icons_@_12.5/play/default.png" height="16"></a>
-                    <a> Play </a>
-                </button>
-                <button type="button" class="btn btn-outline-primary button-white pt-1 pb-1" 
-                        style="border-radius: 20px; margin-left: 10px;"  
+                            <a><img id="play_img" src="icons/card_icons/icons_@_12.5/play/default.png" height="16"></a>
+                            <a> Play </a>
+                        </button>
+                    </div>       
+                </div>
+                <div class="row mb-3"> 
+                    <div class="col-12">
+                        <button type="button" class="btn btn-outline-primary button-white pt-1 pb-1" 
+                        style="border-radius: 20px;"  
                         onmouseover="image_on_hover('my_stuff_img')" 
                         onmouseout="image_on_out('my_stuff_img')">
-                    <img id="my_stuff_img" src="icons/card_icons/icons_@_12.5/add_to_my_stuff/default.png" height="15">
-                    <a style="padding-left: 5px;"> My Stuff </a>
-                </button>
-            </div>
-            <div class="col-1 align-items-end"   style="margin: 3% 0;">
-                <img class="on_mouse_over" src="icons/card_icons/icons_@_22/vertical_menu/default.png"  height="30"
-                    onmouseover="image_swap(this, 'icons/card_icons/icons_@_22/vertical_menu/hover.png')"  
-                    onmouseout="image_swap(this, 'icons/card_icons/icons_@_22/vertical_menu/default.png')">
+                            <img id="my_stuff_img" src="icons/card_icons/icons_@_12.5/add_to_my_stuff/default.png" height="15">
+                            <a style="padding-left: 5px;"> My Stuff </a>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary button-white pt-1 pb-1" 
+                        style="border-radius: 20px; margin-left: 10px;"  
+                        onmouseover="image_on_hover('watch_party_img')" 
+                        onmouseout="image_on_out('watch_party_img')">
+                            <img id="watch_party_img" src="icons/card_icons/icons_@_12.5/watch_party/default.png" height="15">
+                            <a style="padding-left: 5px;"> Watch Party </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-6 d-flex">
+                        <div>
+                            <img src="icons/card_icons/amazonoriginal.svg" style="position: relative; top: 5px;">
+                        </div>
+                        <div class="px-4">
+                        Winner of 8 Emmy Awards. Set in the 1950s, Mariam "Midge" Maisel is a content wife and mother whose perfect life takes a suddent turn when she discovers an unknown talent &mdash; stand-up comedy.
+                        </div>
+                    </div>
+                    <div class="col-5"> </div>
+                    <div class="col-1 d-flex">
+                        <div class="mx-2" onmouseover="image_on_hover('info_img')" 
+                             onmouseout="image_on_out('info_img')">
+                            <img id="info_img" src="icons/card_icons/icons_@_12.5/details/default.png" height="25">
+                        </div>
+                        <div class="mx-2" onmouseover="image_on_hover('share_img')" 
+                             onmouseout="image_on_out('share_img')">
+                            <img id="share_img" src="icons/card_icons/icons_@_12.5/share/default.png" height="25">
+                        </div>
+                        <div class="mx-2" onmouseover="image_on_hover('remove_img')" 
+                             onmouseout="image_on_out('remove_img')">
+                            <img id="remove_img" src="icons/card_icons/icons_@_12.5/remove/default.png" height="25">
+                        </div>
+                    </div>
+                </div>
+            </span>
             </div>
         </div>
     </section>
+
     <section class="container-fluid" style="padding: 0 5%">
         <hr class="mb-3">
         <div class="row content-block-heading mb-2"> Continue Watching</div>
@@ -96,38 +145,46 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 view img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/fleabag.jpg" >
+                                <img class="overlay d-block w-100" src="img/fleabag_hover.svg"> 
                             </div>
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/goodomens.jpg" >
+                                <img class="overlay d-block w-100" src="img/goodomens_hover.svg"> 
                             </div>
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/hanna.jpg" >
+                                <img class="overlay d-block w-100" src="img/hanna_hover.svg"> 
                             </div>
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/mrrobot.jpg" >
+                                <img class="overlay d-block w-100" src="img/mrrobot_hover.svg"> 
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/mrsmaisel.jpg" >
+                                <img class="overlay d-block w-100" src="img/mrsmaisel_hover.svg"> 
                             </div>
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/theamericans.jpg" >
+                                <img class="overlay d-block w-100" src="img/theamericans_hover.svg"> 
                             </div>
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/latenight.jpg" >
+                                <img class="overlay d-block w-100" src="img/latenight_hover.svg"> 
                             </div>
-                            <div class="col-3" style="padding: 0.5%">
+                            <div class="col-3 img-container" style="padding: 0.5%">
                                 <img class="d-block w-100" src="img/workaholics.jpg" >
+                                <img class="overlay d-block w-100" src="img/workaholics_hover.svg"> 
                             </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselControls1" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselControls1" role="button" data-slide="next">
@@ -186,7 +243,72 @@
                 </div>
             </div>
         </div>
+
+
+        <hr class="mb-3">
+        <div class="row content-block-heading mb-2"> Trending Movies</div>
+        <div class="row">
+            <div id="carouselControls3" class="carousel slide" data-ride="carousel" data-interval="900000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/knivesouttall_default.jpg">
+                                <img class="overlay d-block w-100" src="img/knivesouttall_hover.svg"> 
+                            </div>
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/aquietplace_default.jpg" >
+                                <img class="overlay d-block w-100" src="img/aquietplace_hover.svg"> 
+                            </div>
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/thereport_default.jpg" >
+                                <img class="overlay d-block w-100" src="img/thereport_hover.svg"> 
+                            </div>
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/thefarewell_default.jpg" >
+                                <img class="overlay d-block w-100" src="img/thefarewell_hover.svg"> 
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/knivesouttall_default.jpg">
+                                <img class="overlay d-block w-100" src="img/knivesouttall_hover.svg"> 
+                            </div>
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/aquietplace_default.jpg" >
+                                <img class="overlay d-block w-100" src="img/aquietplace_hover.svg"> 
+                            </div>
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/thereport_default.jpg" >
+                                <img class="overlay d-block w-100" src="img/thereport_hover.svg"> 
+                            </div>
+                            <div class="col-3 img-container">
+                                <img class="d-block w-100" src="img/thefarewell_default.jpg" >
+                                <img class="overlay d-block w-100" src="img/thefarewell_hover.svg"> 
+                            </div>                            
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselControls3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselControls3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </section>
+    <hr class="mb-3">
 
 </body>
 </html>
