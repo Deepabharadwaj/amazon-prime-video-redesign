@@ -140,7 +140,7 @@ body{
 
 .img-container:hover {
     position: relative;
-    transform:  translate3d(60px, 0, 0) scale(1.6) !important;
+    transform:  translate3d(75px, 0, 0) scale(1.6) !important;
     transition:transform 500ms ease-in-out;
 }
 
@@ -150,7 +150,7 @@ body{
 } */
 
 .img-container:hover ~ .img-container {
-    transform: translate3d(120px, 0, 0);
+    transform: translate3d(150px, 0, 0);
     transition:transform 500ms ease-in-out;
 }
 
