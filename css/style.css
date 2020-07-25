@@ -228,7 +228,7 @@ html{
     font-size: 0.75rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1400px) {
     .maybe-hide1 {
       display: none;
     }
@@ -238,7 +238,7 @@ html{
     }
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1200px) {
     .maybe-hide2 {
       display: none;
     }
