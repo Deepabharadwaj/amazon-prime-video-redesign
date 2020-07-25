@@ -52,4 +52,92 @@ function updateHero() {
 }
   
 var heroTimer = window.setInterval(updateHero, 3000);
-  
+
+
+
+$(document).ready(function(){
+    $("#carouselControls1").on('slid.bs.carousel', function () {
+      console.log('Finished sliding');
+      currentIndexPop = $('#carouselControls1 div.active').index() + 1;
+      if(currentIndexPop == 1)
+      {
+        var item = document.getElementById("c1-p1");
+        $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+        var item = document.getElementById("c1-p2");
+        $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+      } else {
+        var item = document.getElementById("c1-p2");
+        $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+        var item = document.getElementById("c1-p1");
+        $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+      }
+    });
+
+    $("#carouselControls2").on('slid.bs.carousel', function () {
+        console.log('Finished sliding');
+        currentIndexPop = $('#carouselControls2 div.active').index() + 1;
+        if(currentIndexPop == 1)
+        {
+          var item = document.getElementById("c2-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c2-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        } else {
+          var item = document.getElementById("c2-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c2-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        }
+      });
+
+      $("#carouselControls3").on('slid.bs.carousel', function () {
+        console.log('Finished sliding');
+        currentIndexPop = $('#carouselControls3 div.active').index() + 1;
+        if(currentIndexPop == 1)
+        {
+          var item = document.getElementById("c3-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c3-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        } else {
+          var item = document.getElementById("c3-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c3-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        }
+      });
+
+      $("#carouselControls4").on('slid.bs.carousel', function () {
+        console.log('Finished sliding');
+        currentIndexPop = $('#carouselControls4 div.active').index() + 1;
+        if(currentIndexPop == 1)
+        {
+          var item = document.getElementById("c4-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c4-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        } else {
+          var item = document.getElementById("c4-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c4-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        }
+      });
+
+      $("#carouselControls5").on('slid.bs.carousel', function () {
+        console.log('Finished sliding');
+        currentIndexPop = $('#carouselControls5 div.active').index() + 1;
+        if(currentIndexPop == 1)
+        {
+          var item = document.getElementById("c5-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c5-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        } else {
+          var item = document.getElementById("c5-p2");
+          $(item).attr("src", "icons/card_icons/progressbar_highlighted.svg");
+          var item = document.getElementById("c5-p1");
+          $(item).attr("src", "icons/card_icons/progressbar_default.svg");
+        }
+      });
+ });
