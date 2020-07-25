@@ -227,3 +227,19 @@ html{
     cursor: pointer;
     font-size: 0.75rem;
 }
+
+@media only screen and (max-width: 1024px) {
+    .maybe-hide1 {
+      display: none;
+    }
+    .img-container:hover .overlay{
+        opacity:1;
+        transform: scale(0.97) !important;
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    .maybe-hide2 {
+      display: none;
+    }
+}
