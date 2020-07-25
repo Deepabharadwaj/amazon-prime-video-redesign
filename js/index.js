@@ -46,25 +46,6 @@ function img_out(item) {
     $(item).attr("src", res);
 }
 
-// function change_hero_image() {
-//     var item = document.getElementById("hero-image");
-//     console.log(item);
-//     item.style.backgroundImage = "url('../img/marvelousmaisel.jpg');";
-// }
-
-// function updateTransition() {
-//     var el = document.querySelector("div.hero-overlay");
-     
-//     if (el) {
-//         var res = el.className.replace("hero-overlay", "hero-overlay-gif");
-//       el.className = res;
-//     } 
-//     return el;
-//   }
-  
-//   var intervalID = window.setInterval(updateTransition, 3000);
-  
-
 function updateHero() {
     var item = document.getElementById("hero-gif");
     item.style.opacity= "1";
