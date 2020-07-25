@@ -79,7 +79,7 @@
             <div class="hero-overlay align-items-end" style="padding: 0 5%;">
             <span>
                 <div class="row mb-3" > 
-                    <div class="col-12">
+                    <div class="col-11">
                         <button type="button" class="btn btn-outline-primary button-blue pt-1 pb-1" 
                         style="border-radius: 20px;" 
                         onmouseover="image_on_hover('play_img')" 
@@ -87,7 +87,14 @@
                             <a><img id="play_img" src="icons/card_icons/icons_@_12.5/play/default.png" height="16"></a>
                             <a> Play </a>
                         </button>
-                    </div>       
+                    </div>
+                    <div class="col-auto d-flex ml-auto" >
+                        <div class="mx-2 on_mouse_over float-right" onmouseover="image_on_hover('mute_img')" 
+                             onmouseout="image_on_out('mute_img')" >
+                            <img id="mute_img" src="icons/card_icons/sound_off_default.svg" height="25"
+                            onmousedown="on_off_toggle(this)">
+                        </div>
+                    </div>
                 </div>
                 <div class="row mb-3"> 
                     <div class="col-12">
@@ -116,8 +123,7 @@
                         Winner of 8 Emmy Awards. Set in the 1950s, Mariam "Midge" Maisel is a content wife and mother whose perfect life takes a suddent turn when she discovers an unknown talent &mdash; stand-up comedy.
                         </div>
                     </div>
-                    <div class="col-5"> </div>
-                    <div class="col-1 d-flex">
+                    <div class="col-auto d-flex ml-auto">
                         <div class="mx-2 on_mouse_over" onmouseover="image_on_hover('info_img')" 
                              onmouseout="image_on_out('info_img')">
                             <img id="info_img" src="icons/card_icons/icons_@_12.5/details/default.png" height="25">
@@ -409,6 +415,81 @@
         </div>
     </section>
     <hr class="mb-3">
+    <section class="container-fluid"  style="padding: 0 2%">
+        <div class="row mx-auto text-center  back-to-top"> 
+            <div class="col-12">
+                    <a href="#" class= "b2t-text ">
+                         <strong> Back to Top </strong>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <hr class="mb-3">
+    <footer class="container-fluid" style="padding: 0 5%;">
+        <div class="row mb-4">
+            <div class="col-auto mr-auto">
+               <a href="#"><img src="icons/prime _video_logo.png" height="40"></a> 
+            </div>
+            <div class="col-auto d-flex ml-auto">
+                <div class="mx-2 on_mouse_over" onmouseover="image_on_hover('fb_img')" 
+                        onmouseout="image_on_out('fb_img')">
+                    <img id="fb_img" src="icons/social_icons/facebook_default.svg" height="25">
+                </div>
+                <div class="mx-2 on_mouse_over" onmouseover="image_on_hover('ig_img')" 
+                        onmouseout="image_on_out('ig_img')">
+                    <img id="ig_img" src="icons/social_icons/insta_default.svg" height="25">
+                </div>
+                <div class="mx-2 on_mouse_over" onmouseover="image_on_hover('tw_img')" 
+                        onmouseout="image_on_out('tw_img')">
+                    <img id="tw_img" src="icons/social_icons/twitter_default.svg" height="25">
+                </div>
+                <div class="mx-1 on_mouse_over" onmouseover="image_on_hover('you_img')" 
+                        onmouseout="image_on_out('you_img')">
+                    <img id="you_img" src="icons/social_icons/youtube_default.svg" height="25">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-auto mr-auto d-flex">
+                <div class="footer-section">
+                    <div class="footer-heading"> Get to Know Us</div>
+                    <div class="footer-line"> Careers</div>
+                    <div class="footer-line"> Blog</div>
+                    <div class="footer-line"> About Amazon</div>
+                    <div class="footer-line"> Press Center</div>
+                    <div class="footer-line"> Investor Relations</div>
+                    <div class="footer-line"> Amazon Devices</div>
+                    <div class="footer-line"> Amazon Tours</div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-heading"> Amazon Payment Products</div>
+                    <div class="footer-line"> Amazon Rewards Visa Signature</div>
+                    <div class="footer-line"> Cards</div>
+                    <div class="footer-line"> Amazon.com Store Card</div>
+                    <div class="footer-line"> Amazon Business Card</div>
+                    <div class="footer-line"> Amazon Corporate Credit Card</div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-heading"> Let Us Help You</div>
+                    <div class="footer-line"> Amazon and Covid-19</div>
+                    <div class="footer-line"> Your Account</div>
+                    <div class="footer-line"> Your Orders</div>
+                    <div class="footer-line"> Returns and Replacements </div>
+                    <div class="footer-line"> Manage Your Content and Devices</div>
+                    <div class="footer-line"> Amazon Assistant</div>
+                    <div class="footer-line"> Help</div>
+                </div>
+
+            </div>
+            <div class="col-auto ml-auto align-self-end">
+                <div class="align-bottom">
+                    <a href="https://www.amazon.com" target="_blank"><img src="icons/footer_icons/amazondefault.png" height="40"> </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 </html>

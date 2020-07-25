@@ -6,6 +6,17 @@ function image_toggle(location, image1, image2){
     }
 }
 
+function on_off_toggle(item){ 
+    var img_file = $(item).attr("src");
+    if (img_file.indexOf("_on_") != -1 ){
+        var res = img_file.replace("_on_", "_off_");
+        $(item).attr("src", res);
+    } else {
+        var res = img_file.replace("_off_", "_on_");
+        $(item).attr("src", res);
+    }
+}
+
 function image_swap(location, image){ 
     $(location).attr("src", image);
 }
